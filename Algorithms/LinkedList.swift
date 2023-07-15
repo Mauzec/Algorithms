@@ -1,7 +1,7 @@
 public final class LinkedList<T> {
     
     // Linked List Node Declaration
-    public class LinkedListNode<D> {
+    public class LinkedListNode<D>  {
         var value: D
         var next: LinkedListNode?
         weak var previous: LinkedListNode?
@@ -71,6 +71,7 @@ public final class LinkedList<T> {
         } else {
             head = new
         }
+        tail = new
         count += 1
     }
     
@@ -142,11 +143,14 @@ public final class LinkedList<T> {
         
         node.previous = nil
         node.next = nil
+        
+        count -= 1
         return node.value
     }
     
     public func removeAll() {
         head = nil
+        tail = nil
     }
     
     @discardableResult public func removeLast() -> T {
