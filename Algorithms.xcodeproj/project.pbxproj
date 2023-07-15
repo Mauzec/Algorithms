@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55616E152A62A30D003F293E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */; };
-		55616E1D2A62A3C6003F293E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55616E1C2A62A3C6003F293E /* Tests.swift */; };
+		55616E1D2A62A3C6003F293E /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55616E1C2A62A3C6003F293E /* LinkedListTest.swift */; };
 		55616E1E2A62A3C6003F293E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */; };
 		55616E272A62A4E3003F293E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		55616E1A2A62A3C6003F293E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		55616E1C2A62A3C6003F293E /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		55616E1C2A62A3C6003F293E /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlgorithms.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +64,7 @@
 		55616E1B2A62A3C6003F293E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				55616E1C2A62A3C6003F293E /* Tests.swift */,
+				55616E1C2A62A3C6003F293E /* LinkedListTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55616E272A62A4E3003F293E /* LinkedList.swift in Sources */,
-				55616E1D2A62A3C6003F293E /* Tests.swift in Sources */,
+				55616E1D2A62A3C6003F293E /* LinkedListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
