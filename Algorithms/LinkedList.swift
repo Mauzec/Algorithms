@@ -23,7 +23,7 @@ public final class LinkedList<T> {
     
     // Check if LL is empty
     public var isEmpty: Bool {
-        return head == nil
+        return (head == nil) && (tail == nil)
     }
     
     // Default initializer
@@ -243,7 +243,7 @@ extension LinkedList: Collection {
     }
     public var endIndex: Index {
         get {
-            return LinkedListIndex<T>(node:tail, tag:count)
+            return LinkedListIndex<T>(node:nil, tag:count)
         }
     }
     public subscript(position: Index) -> T {
