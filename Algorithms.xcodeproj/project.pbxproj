@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55616E152A62A30D003F293E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */; };
-		55616E1D2A62A3C6003F293E /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55616E1C2A62A3C6003F293E /* LinkedListTest.swift */; };
 		55616E1E2A62A3C6003F293E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */; };
-		55616E272A62A4E3003F293E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */; };
+		5594D47B2A6922F50013DB6E /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D47A2A6922F50013DB6E /* HashSet.swift */; };
+		5594D4872A69659B0013DB6E /* HashSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D4862A69659B0013DB6E /* HashSetTest.swift */; };
+		5594D4882A6965D40013DB6E /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D47A2A6922F50013DB6E /* HashSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,18 @@
 /* Begin PBXFileReference section */
 		55616E1A2A62A3C6003F293E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55616E1C2A62A3C6003F293E /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
+		55616E282A62E3BA003F293E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		55616E2C2A62E809003F293E /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
+		55616E2F2A62F470003F293E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		55616E342A62F5C3003F293E /* QueueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTest.swift; sourceTree = "<group>"; };
+		55616E362A62FA75003F293E /* QueueMod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueMod.swift; sourceTree = "<group>"; };
+		55616E382A62FA80003F293E /* QueueModTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueModTest.swift; sourceTree = "<group>"; };
 		5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlgorithms.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		558F7EB12A637EF60004A457 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		5594D4772A6913D70013DB6E /* HashTableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTableTest.swift; sourceTree = "<group>"; };
+		5594D47A2A6922F50013DB6E /* HashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSet.swift; sourceTree = "<group>"; };
+		5594D4862A69659B0013DB6E /* HashSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSetTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,11 @@
 			isa = PBXGroup;
 			children = (
 				55616E1C2A62A3C6003F293E /* LinkedListTest.swift */,
+				55616E2C2A62E809003F293E /* StackTest.swift */,
+				55616E342A62F5C3003F293E /* QueueTest.swift */,
+				55616E382A62FA80003F293E /* QueueModTest.swift */,
+				5594D4772A6913D70013DB6E /* HashTableTest.swift */,
+				5594D4862A69659B0013DB6E /* HashSetTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -91,6 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */,
+				55616E282A62E3BA003F293E /* Stack.swift */,
+				55616E2F2A62F470003F293E /* Queue.swift */,
+				55616E362A62FA75003F293E /* QueueMod.swift */,
+				558F7EB12A637EF60004A457 /* HashTable.swift */,
+				5594D47A2A6922F50013DB6E /* HashSet.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -145,6 +165,7 @@
 				TargetAttributes = {
 					55616E192A62A3C6003F293E = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 					5583E23C2A5E9FC800ABA8D8 = {
 						CreatedOnToolsVersion = 15.0;
@@ -185,8 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55616E272A62A4E3003F293E /* LinkedList.swift in Sources */,
-				55616E1D2A62A3C6003F293E /* LinkedListTest.swift in Sources */,
+				5594D4882A6965D40013DB6E /* HashSet.swift in Sources */,
+				5594D4872A69659B0013DB6E /* HashSetTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55616E152A62A30D003F293E /* LinkedList.swift in Sources */,
+				5594D47B2A6922F50013DB6E /* HashSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +233,7 @@
 		55616E222A62A3C6003F293E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
@@ -220,6 +242,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mauzec.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -228,6 +251,7 @@
 		55616E232A62A3C6003F293E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
