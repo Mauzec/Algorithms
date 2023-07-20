@@ -1,10 +1,3 @@
-//
-//  Tests.swift
-//  Tests
-//
-//  Created by Timur Murzakov on 15/07/2023.
-//
-
 import XCTest
 
 
