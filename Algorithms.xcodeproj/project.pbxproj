@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5527FB3B2A6B07DB0065FA4E /* BitSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527FB3A2A6B07DB0065FA4E /* BitSetTest.swift */; };
 		5527FB3C2A6B07E30065FA4E /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D4892A696C780013DB6E /* BitSet.swift */; };
 		55616E1E2A62A3C6003F293E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */; };
 		5594D47B2A6922F50013DB6E /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D47A2A6922F50013DB6E /* HashSet.swift */; };
@@ -37,7 +36,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5527FB3A2A6B07DB0065FA4E /* BitSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitSetTest.swift; sourceTree = "<group>"; };
 		55616E1A2A62A3C6003F293E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55616E1C2A62A3C6003F293E /* LinkedListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 		55616E282A62E3BA003F293E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				55616E382A62FA80003F293E /* QueueModTest.swift */,
 				5594D4772A6913D70013DB6E /* HashTableTest.swift */,
 				5594D4862A69659B0013DB6E /* HashSetTest.swift */,
-				5527FB3A2A6B07DB0065FA4E /* BitSetTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -212,7 +209,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5527FB3C2A6B07E30065FA4E /* BitSet.swift in Sources */,
-				5527FB3B2A6B07DB0065FA4E /* BitSetTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

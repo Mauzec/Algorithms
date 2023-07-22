@@ -82,13 +82,14 @@ public struct BitSet {
     private mutating func clearUnused() {
         words[words.count - 1] &= lastUsedWordMask()
     }
-    /// returns largest bitset and minimum word size(another size one)
-    static private func copyLargest(_ lhs: BitSet, _ rhs: BitSet) -> (BitSet, Int) {
-        return (lhs.words.count > rhs.words.count) ? (lhs, rhs.words.count) : (rhs, lhs.words.count)
+    /// returns largest bitset
+    static private func copyLargest(_ lhs: BitSet, _ rhs: BitSet) -> BitSet {
+        return (lhs.words.count > rhs.words.count) ? lhs: rhs
     }
     
     static public func |(lhs: BitSet, rhs: BitSet) -> BitSet {
-        var (result, minWordCount) = BitSet.copyLargest(lhs, rhs)
+        var result = copyLargest(lhs, rhs)
+        let minWordCount = min(lhs.words.count, rhs.words.count)
         for wordIndex in 0..<minWordCount {
             result.words[wordIndex] = lhs.words[wordIndex] | rhs.words[wordIndex]
         }
@@ -103,5 +104,27 @@ public struct BitSet {
             result.words[wordIndex] = lhs.words[wordIndex] & rhs.words[wordIndex]
         }
         return result
+    }
+    static public func ^(lhs: BitSet, rhs: BitSet) -> BitSet {
+        var result = copyLargest(lhs, rhs)
+        let minWordCount = min(lhs.words.count, rhs.words.count)
+        for wordIndex in 0..<minWordCount {
+            result.words[wordIndex] = lhs.words[wordIndex] ^ rhs.words[wordIndex]
+        }
+        return result
+    }
+    prefix static public func ~(rhs: BitSet) -> BitSet {
+        var result = BitSet(bitCount: rhs.count)
+        for wordIndex in 0..<rhs.words.count {
+            result.words[wordIndex] = ~rhs.words[wordIndex]
+        }
+        result.clearUnused()
+        return result
+    }
+}
+
+extension BitSet: Equatable {
+    static public func ==(lhs: BitSet, rhs: BitSet) -> Bool {
+        return lhs.words == rhs.words
     }
 }
