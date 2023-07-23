@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5527FB3C2A6B07E30065FA4E /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D4892A696C780013DB6E /* BitSet.swift */; };
 		55616E1E2A62A3C6003F293E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */; };
-		5594D47B2A6922F50013DB6E /* HashSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D47A2A6922F50013DB6E /* HashSet.swift */; };
-		5594D48A2A696C780013DB6E /* BitSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5594D4892A696C780013DB6E /* BitSet.swift */; };
+		55AB57DF2A6BD6DC00FCE783 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB57DE2A6BD6DC00FCE783 /* Deque.swift */; };
+		55AB57E12A6DB69600FCE783 /* DequeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB57E02A6DB69600FCE783 /* DequeTest.swift */; };
+		55AB57E22A6DB6A700FCE783 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB57DE2A6BD6DC00FCE783 /* Deque.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,8 @@
 		5594D47A2A6922F50013DB6E /* HashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSet.swift; sourceTree = "<group>"; };
 		5594D4862A69659B0013DB6E /* HashSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSetTest.swift; sourceTree = "<group>"; };
 		5594D4892A696C780013DB6E /* BitSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitSet.swift; sourceTree = "<group>"; };
+		55AB57DE2A6BD6DC00FCE783 /* Deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		55AB57E02A6DB69600FCE783 /* DequeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				55616E382A62FA80003F293E /* QueueModTest.swift */,
 				5594D4772A6913D70013DB6E /* HashTableTest.swift */,
 				5594D4862A69659B0013DB6E /* HashSetTest.swift */,
+				55AB57E02A6DB69600FCE783 /* DequeTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -113,6 +116,7 @@
 				558F7EB12A637EF60004A457 /* HashTable.swift */,
 				5594D47A2A6922F50013DB6E /* HashSet.swift */,
 				5594D4892A696C780013DB6E /* BitSet.swift */,
+				55AB57DE2A6BD6DC00FCE783 /* Deque.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -171,6 +175,7 @@
 					};
 					5583E23C2A5E9FC800ABA8D8 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -208,7 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5527FB3C2A6B07E30065FA4E /* BitSet.swift in Sources */,
+				55AB57E22A6DB6A700FCE783 /* Deque.swift in Sources */,
+				55AB57E12A6DB69600FCE783 /* DequeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5594D48A2A696C780013DB6E /* BitSet.swift in Sources */,
-				5594D47B2A6922F50013DB6E /* HashSet.swift in Sources */,
+				55AB57DF2A6BD6DC00FCE783 /* Deque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +240,7 @@
 		55616E222A62A3C6003F293E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -253,6 +259,7 @@
 		55616E232A62A3C6003F293E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -390,11 +397,13 @@
 		5583E2452A5E9FC800ABA8D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,6 +412,7 @@
 		5583E2462A5E9FC800ABA8D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
 				OTHER_LDFLAGS = "-ObjC";
