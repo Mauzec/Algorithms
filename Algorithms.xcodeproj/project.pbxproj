@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550F3A3E2A70142800CDF0BC /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F3A3D2A70142800CDF0BC /* Heap.swift */; };
+		553139B62A7E86BF009CF76B /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2B7392A7D222200A575CE /* BinarySearchTree.swift */; };
 		55616E1E2A62A3C6003F293E /* libAlgorithms.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5583E23D2A5E9FC800ABA8D8 /* libAlgorithms.a */; };
-		55EA42392A75454E00EEB20D /* HeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EA42382A75454E00EEB20D /* HeapTest.swift */; };
-		55EA423A2A75455900EEB20D /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550F3A3D2A70142800CDF0BC /* Heap.swift */; };
+		5598B5A52A7E8343001896BA /* BinarySearchTreeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598B5A42A7E8343001896BA /* BinarySearchTreeTest.swift */; };
+		55A82C062A7E8D0B00723556 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A82C052A7E8D0B00723556 /* main.swift */; };
+		55C2B73A2A7D222300A575CE /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C2B7392A7D222200A575CE /* BinarySearchTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,14 @@
 		5594D47A2A6922F50013DB6E /* HashSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSet.swift; sourceTree = "<group>"; };
 		5594D4862A69659B0013DB6E /* HashSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSetTest.swift; sourceTree = "<group>"; };
 		5594D4892A696C780013DB6E /* BitSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitSet.swift; sourceTree = "<group>"; };
+		5598B5A42A7E8343001896BA /* BinarySearchTreeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTest.swift; sourceTree = "<group>"; };
+		55A82C052A7E8D0B00723556 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		55AB57DE2A6BD6DC00FCE783 /* Deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
 		55AB57E02A6DB69600FCE783 /* DequeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeTest.swift; sourceTree = "<group>"; };
-		55AB57E32A6E5DBB00FCE783 /* [TODO]PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "[TODO]PriorityQueue.swift"; sourceTree = "<group>"; };
+		55AB57E32A6E5DBB00FCE783 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
+		55C2B7392A7D222200A575CE /* BinarySearchTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		55CC52DB2A7BCBB9009491BD /* CircularBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularBuffer.swift; sourceTree = "<group>"; };
+		55E670B32A7BF51C007DF666 /* CircularBufferTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularBufferTest.swift; sourceTree = "<group>"; };
 		55EA42382A75454E00EEB20D /* HeapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,8 @@
 		55616E1B2A62A3C6003F293E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5598B5A42A7E8343001896BA /* BinarySearchTreeTest.swift */,
+				55E670B32A7BF51C007DF666 /* CircularBufferTest.swift */,
 				55616E1C2A62A3C6003F293E /* LinkedListTest.swift */,
 				55616E2C2A62E809003F293E /* StackTest.swift */,
 				55616E342A62F5C3003F293E /* QueueTest.swift */,
@@ -113,6 +121,7 @@
 		5583E23F2A5E9FC800ABA8D8 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				55A82C052A7E8D0B00723556 /* main.swift */,
 				5583E2402A5E9FC800ABA8D8 /* LinkedList.swift */,
 				55616E282A62E3BA003F293E /* Stack.swift */,
 				55616E2F2A62F470003F293E /* Queue.swift */,
@@ -121,8 +130,10 @@
 				5594D47A2A6922F50013DB6E /* HashSet.swift */,
 				5594D4892A696C780013DB6E /* BitSet.swift */,
 				55AB57DE2A6BD6DC00FCE783 /* Deque.swift */,
-				55AB57E32A6E5DBB00FCE783 /* [TODO]PriorityQueue.swift */,
+				55AB57E32A6E5DBB00FCE783 /* PriorityQueue.swift */,
 				550F3A3D2A70142800CDF0BC /* Heap.swift */,
+				55CC52DB2A7BCBB9009491BD /* CircularBuffer.swift */,
+				55C2B7392A7D222200A575CE /* BinarySearchTree.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -219,8 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55EA423A2A75455900EEB20D /* Heap.swift in Sources */,
-				55EA42392A75454E00EEB20D /* HeapTest.swift in Sources */,
+				553139B62A7E86BF009CF76B /* BinarySearchTree.swift in Sources */,
+				5598B5A52A7E8343001896BA /* BinarySearchTreeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550F3A3E2A70142800CDF0BC /* Heap.swift in Sources */,
+				55A82C062A7E8D0B00723556 /* main.swift in Sources */,
+				55C2B73A2A7D222300A575CE /* BinarySearchTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +265,7 @@
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = Mauzec.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -272,6 +285,7 @@
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = Mauzec.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -406,6 +420,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -421,6 +436,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X3Y69D3VMD;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
