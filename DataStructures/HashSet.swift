@@ -1,6 +1,3 @@
-/// Since Swift uses its hash table in the set(hash set) implementation,
-/// I don't use the HashTable.swift I wrote,
-/// but just take the Dictionary struct like <Key, Bool>
 public struct HashSet<Key: Hashable> {
     private(set) var dict = Dictionary<Key, Bool>()
     public init() {}
